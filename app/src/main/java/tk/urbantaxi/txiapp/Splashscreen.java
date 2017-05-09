@@ -1,5 +1,6 @@
 package tk.urbantaxi.txiapp;
 
+import android.content.Context;
 import android.content.Intent;
 import android.graphics.PixelFormat;
 import android.support.v7.app.AppCompatActivity;
@@ -10,6 +11,8 @@ import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
+import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
+
 public class Splashscreen extends AppCompatActivity {
     public void onAttachedToWindow() {
         super.onAttachedToWindow();
@@ -18,6 +21,11 @@ public class Splashscreen extends AppCompatActivity {
     }
     /** Called when the activity is first created. */
     Thread splashTread;
+
+    @Override
+    protected void attachBaseContext(Context newBase) {
+        super.attachBaseContext(CalligraphyContextWrapper.wrap(newBase));
+    }
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

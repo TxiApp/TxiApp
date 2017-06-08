@@ -55,10 +55,10 @@ public class Splashscreen extends AppCompatActivity {
                         sleep(100);
                         waited += 100;
                     }
-//                    Intent intent = new Intent(Splashscreen.this,
-//                            Login.class);
-//                    intent.setFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
-//                    startActivity(intent);
+                    Intent intent = new Intent(Splashscreen.this,
+                            Login.class);
+                    intent.setFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
+                    startActivity(intent);
                     Splashscreen.this.finish();
                 } catch (InterruptedException e) {
                     // do nothing

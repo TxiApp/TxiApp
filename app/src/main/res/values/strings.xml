@@ -23,4 +23,7 @@
     <string name="signup2_text8"><u>Terms and Conditions</u></string>
     <string name="signup2_text9">of this mobile app and company services</string>
     <string name="signup2_text10">Submit</string>
+    <string name="home_text1">TXI</string>
+    <string name="home_text2">BLK</string>
+    <string name="home_text3">BY</string>
 </resources>
